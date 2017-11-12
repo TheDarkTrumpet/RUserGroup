@@ -153,3 +153,4 @@ ElectronicSyllabus.WebUI/Scripts/esyllabus/*.js
 ElectronicSyllabus.WebUI/Scripts/esyllabus/*.map
 
 nCrunchTemp*
+.Rproj.user
