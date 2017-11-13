@@ -8,6 +8,10 @@
 .vs/*
 # Build results
 
+# R Files
+.RHistory
+.RData
+
 [Dd]ebug/
 [Rr]elease/
 x64/

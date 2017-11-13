@@ -1,0 +1,11 @@
+install.packages("plyr")
+install.packages("ggplot2")
+install.packages("gridExtra")
+install.packages("dtplyr")
+install.packages("dplyr")
+
+library("plyr")
+library("ggplot2")
+library("gridExtra")
+library("dtplyr")
+library("dplyr")
