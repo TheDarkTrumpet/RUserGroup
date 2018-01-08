@@ -11,7 +11,10 @@
 # R Files
 .RHistory
 .RData
-.Rproj
+
+
+# RStudio files
+.Rproj.user/
 
 [Dd]ebug/
 [Rr]elease/
