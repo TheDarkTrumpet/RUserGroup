@@ -12,6 +12,10 @@
 .RHistory
 .RData
 
+
+# RStudio files
+.Rproj.user/
+
 [Dd]ebug/
 [Rr]elease/
 x64/
