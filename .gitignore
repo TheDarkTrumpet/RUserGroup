@@ -11,6 +11,7 @@
 # R Files
 .RHistory
 .RData
+.Rproj
 
 [Dd]ebug/
 [Rr]elease/
