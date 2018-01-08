@@ -8,8 +8,10 @@ north_english <- read_csv("2018.01.08-MatchingSimilar/Data/NorthEnglish-Precpt.c
 
 # changing column names to lower case
 iowa_city <- rename_all(iowa_city, tolower)
-names(iowa_city) <- paste(names(iowa_city), "ic", sep = "_")
 north_english <- rename_all(north_english, tolower)
+
+# Append _ic/_ne to names of variables to prep for merge later.
+names(iowa_city) <- paste(names(iowa_city), "ic", sep = "_")
 names(north_english) <- paste(names(north_english), "ne", sep = "_")
 
 # read in old data source
@@ -23,7 +25,7 @@ sensor <- read_csv("2017.09-ProcessingBasics/Data/CCWS-IQ_sensor_data_6-26-17_10
 # renames columns
 sensor <- sensor %>%
   mutate(time = parse_datetime(timestamp, format = "%m/%d/%Y %H:%M:%S"),
-         date = gsub(" UTC$", "", round(time, unit = 'days')),
+         date = gsub("\\s+\\d+:\\d+:\\d+", "", time),
          month = month(time),
          day = day(time),
          week = week(time),
